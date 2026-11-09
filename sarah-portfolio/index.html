@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Khairunnisa Adi Kusuma — Business Management Graduate</title>
+  <meta name="description" content="Professional portfolio of Sarah Khairunnisa Adi Kusuma, Business Management (Telecommunications &amp; Informatics) graduate from Telkom University — business development, digital marketing, and relationship management." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:   { DEFAULT: '#0f2547', 700: '#173463', 600: '#1e4079', 400: '#4a6a9d' },
+            accent: { DEFAULT: '#2563eb', light: '#3b82f6', soft: '#e8effc' },
+            mist:   '#f5f8fc',
+          },
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+          spacing: { '4.5': '1.125rem' },
+          boxShadow: {
+            card: '0 1px 2px rgba(15,37,71,.04), 0 8px 24px -12px rgba(15,37,71,.14)',
+            lift: '0 4px 10px rgba(15,37,71,.06), 0 20px 40px -20px rgba(15,37,71,.24)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-mist font-sans text-navy antialiased">
+  <!-- thin blue rail on the left edge of the page -->
+  <div class="page-rail" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <a href="#hero" class="skip-link">Skip to content</a>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <header id="navbar" class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md transition-shadow duration-300">
+    <nav class="mx-auto flex h-16 max-w-[1240px] items-center justify-between gap-6 px-5 lg:px-8" aria-label="Main navigation">
+      <a href="#hero" class="group flex items-center gap-2.5 shrink-0" data-nav>
+        <span class="grid h-8 w-8 place-items-center rounded-md bg-navy text-[13px] font-bold text-white">SK</span>
+        <span class="text-[15px] font-bold tracking-tight">Sarah Khairunnisa</span>
+      </a>
+
+      <ul class="hidden items-center gap-1 lg:flex" id="navLinks">
+        <li><a href="#hero"           class="nav-link" data-nav>Home</a></li>
+        <li><a href="#about"          class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills"         class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#experience"     class="nav-link" data-nav>Experience</a></li>
+        <li><a href="#projects"       class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-nav>Certifications</a></li>
+        <li><a href="#contact"        class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="hidden items-center gap-2.5 lg:flex">
+        <a href="#projects" class="btn-ghost" data-nav>View Portfolio</a>
+        <a href="assets/SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" download="SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" class="btn-primary">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+
+      <button id="menuToggle" class="grid h-10 w-10 place-items-center rounded-lg border border-slate-200 text-navy lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg id="iconMenu" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="iconClose" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </nav>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="mobile-menu lg:hidden">
+      <ul class="mx-auto max-w-[1240px] space-y-1 px-5 pb-5 pt-2">
+        <li><a href="#hero"           class="mobile-link" data-nav>Home</a></li>
+        <li><a href="#about"          class="mobile-link" data-nav>About</a></li>
+        <li><a href="#skills"         class="mobile-link" data-nav>Skills</a></li>
+        <li><a href="#experience"     class="mobile-link" data-nav>Experience</a></li>
+        <li><a href="#projects"       class="mobile-link" data-nav>Projects</a></li>
+        <li><a href="#certifications" class="mobile-link" data-nav>Certifications</a></li>
+        <li><a href="#contact"        class="mobile-link" data-nav>Contact</a></li>
+        <li class="grid grid-cols-2 gap-2.5 pt-3">
+          <a href="#projects" class="btn-ghost justify-center" data-nav>View Portfolio</a>
+          <a href="assets/SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" download="SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" class="btn-primary justify-center">Download CV</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section id="hero" class="section-anchor relative overflow-hidden">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-[1240px] items-center gap-12 px-5 py-16 lg:grid-cols-[1.05fr_.95fr] lg:gap-16 lg:px-8 lg:py-24">
+        <div class="reveal">
+          <span class="badge">Fresh Graduate</span>
+
+          <h1 class="mt-6 text-[2.1rem] font-extrabold leading-[1.15] tracking-tight sm:text-[2.6rem] lg:text-[3.1rem]">
+            Business Management Graduate
+            <span class="text-slate-300 font-light">|</span>
+            <span class="text-accent">Public Relations</span>
+            <span class="text-slate-300 font-light">|</span>
+            Project Management
+          </h1>
+
+          <p class="mt-6 max-w-xl text-[15px] leading-relaxed text-slate-600">
+            Bachelor of Management in Telecommunications &amp; Informatics Business Management from Telkom University —
+            communicative, proactive, and target-oriented. Strong interest in business development, public relations,
+            and project management, with hands-on experience designing product marketing strategies, managing
+            digital content, and leading team coordination in campus organizations.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="btn-primary" data-nav>
+              View Portfolio
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="assets/SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" download="SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" class="btn-outline">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+
+          <ul class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-slate-200 pt-6 text-[13.5px]">
+            <li>
+              <a href="tel:+6281316231212" class="contact-inline">
+                <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                081316231212
+              </a>
+            </li>
+            <li>
+              <a href="mailto:sarahkhai48@gmail.com" class="contact-inline">
+                <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                sarahkhai48@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/sarahkhairunnisaadikusuma/" target="_blank" rel="noopener noreferrer" class="contact-inline">
+                <svg class="h-4 w-4 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.35c0-1.28-.02-2.92-1.78-2.92-1.79 0-2.06 1.4-2.06 2.83V21H9z"/></svg>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- profile photo -->
+        <div class="reveal relative mx-auto w-full max-w-[420px] lg:max-w-none" style="--delay:120ms">
+          <div class="relative rounded-2xl border border-slate-200 bg-white p-2.5 shadow-lift">
+            <img src="assets/profile.jpg" alt="Portrait of Sarah Khairunnisa Adi Kusuma" class="h-[380px] w-full rounded-xl object-cover object-top sm:h-[440px]" loading="eager" width="864" height="1184" />
+            <div class="float-chip -left-3 top-8 sm:-left-6">
+              <span class="chip-icon bg-accent-soft text-accent">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 3 5-6"/></svg>
+              </span>
+              Public Relations
+            </div>
+            <div class="float-chip -right-3 bottom-10 sm:-right-6">
+              <span class="chip-icon bg-navy/5 text-navy">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+              </span>
+              Project Management
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section id="about" class="section-anchor mx-auto max-w-[1240px] px-5 pb-16 lg:px-8 lg:pb-24">
+      <div class="reveal rounded-2xl border border-slate-200 bg-white p-7 shadow-card sm:p-10 lg:p-12">
+        <div class="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2rem]">About Me</h2>
+            <p class="mt-5 text-[15px] leading-relaxed text-slate-600">
+              I am a graduate of Business Management in Telecommunications &amp; Informatics from Telkom University.
+              My academic background and practical experience have shaped a communicative, proactive,
+              and target-oriented way of working.
+            </p>
+            <p class="mt-4 text-[15px] leading-relaxed text-slate-600">
+              I have real experience designing product marketing strategies, producing and managing digital learning
+              content, and leading team coordination across campus organizations. I am adaptive and ready to contribute
+              to improving partner satisfaction and driving business growth.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 sm:gap-5">
+            <div class="stat-card">
+              <span class="stat-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <span class="stat-num">1</span>
+              <span class="stat-label">Professional Experience</span>
+              <span class="stat-note">CeLOE Telkom University</span>
+
+              <div class="stat-photos">
+                <figure class="stat-photo">
+                  <img src="assets/img/celoe-2.jpeg" alt="Team photo at CeLOE Digital Space, Telkom University"
+                       loading="lazy" decoding="async" />
+                </figure>
+                <figure class="stat-photo stat-photo--tall">
+                  <img src="assets/img/celoe.jpeg" alt="CeLOE online session on optimising CDS &amp; LMS service usage"
+                       loading="lazy" decoding="async" />
+                </figure>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span class="stat-num">3</span>
+              <span class="stat-label">Organization Experience</span>
+              <span class="stat-note">PERKARA · Peace · CEF</span>
+
+              <div class="stat-photos stat-photos--three">
+                <figure class="stat-photo stat-photo--group">
+                  <img src="assets/img/perkara.jpeg" alt="PERKARA members during an organisational activity"
+                       loading="lazy" decoding="async" />
+                </figure>
+                <figure class="stat-photo stat-photo--face">
+                  <img src="assets/img/perkara-2.jpeg" alt="PERKARA organisational portrait"
+                       loading="lazy" decoding="async" />
+                </figure>
+                <figure class="stat-photo stat-photo--crew">
+                  <img src="assets/img/perkara-3.jpeg" alt="Event committee during a PERKARA event"
+                       loading="lazy" decoding="async" />
+                </figure>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+              <span class="stat-num">1</span>
+              <span class="stat-label">Academic Project</span>
+              <span class="stat-note">Undergraduate final project</span>
+
+              <div class="stat-photos stat-photos--one">
+                <figure class="stat-photo stat-photo--thesis">
+                  <img src="assets/img/skripsi.jpeg" alt="Sarah holding her final project at the School of Economics and Business, Telkom University"
+                       loading="lazy" decoding="async" />
+                </figure>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m8.5 13.5-1.5 8L12 19l5 2.5-1.5-8"/></svg></span>
+              <span class="stat-num">3</span>
+              <span class="stat-label">Certifications</span>
+              <span class="stat-note">BNSP · RevoU</span>
+
+              <div class="stat-photos stat-photos--three stat-photos--docs">
+                <figure class="stat-photo">
+                  <img src="assets/img/sertifikasi.jpeg" alt="BNSP risk management certification session"
+                       loading="lazy" decoding="async" />
+                </figure>
+                <figure class="stat-photo">
+                  <img src="assets/img/DigitalMarketing.jpeg" alt="RevoU certificate of completion for Intro to Digital Marketing"
+                       loading="lazy" decoding="async" />
+                </figure>
+                <figure class="stat-photo">
+                  <img src="assets/img/DataAnalytics.jpeg" alt="RevoU certificate of completion for Intro to Data Analytics"
+                       loading="lazy" decoding="async" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SKILLS ══════════════════ -->
+    <section id="skills" class="section-anchor border-y border-slate-200 bg-white">
+      <div class="mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="eyebrow">Skills</span>
+          <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2.15rem]">Skills &amp; Expertise</h2>
+          <p class="mt-4 text-[15px] leading-relaxed text-slate-600">
+            Capabilities and tools listed in my CV, grouped by area of work.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="reveal skill-card">
+            <header class="skill-head">
+              <span class="skill-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <h3>Business Skills</h3>
+            </header>
+            <ul class="skill-list">
+              <li>Project Management</li>
+              <li>Design Thinking</li>
+              <li>Risk Management <span class="tag-note">BNSP certified</span></li>
+              <li>Event Planning &amp; Budgeting</li>
+              <li>Organizational Administration &amp; Reporting</li>
+              <li>Problem Solving</li>
+            </ul>
+          </article>
+
+          <article class="reveal skill-card" style="--delay:80ms">
+            <header class="skill-head">
+              <span class="skill-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg></span>
+              <h3>Marketing Skills</h3>
+            </header>
+            <ul class="skill-list">
+              <li>Digital Marketing <span class="tag-note">RevoU certified</span></li>
+              <li>Social Media Content Creation</li>
+              <li>Brand Awareness Campaign</li>
+              <li>Content Production &amp; Curation</li>
+              <li>Event &amp; Booth Promotion</li>
+              <li>Persuasive Communication</li>
+            </ul>
+          </article>
+
+          <article class="reveal skill-card" style="--delay:160ms">
+            <header class="skill-head">
+              <span class="skill-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg></span>
+              <h3>Data &amp; Tools</h3>
+            </header>
+            <ul class="skill-list">
+              <li>Data Analytics <span class="tag-note">RevoU certified</span></li>
+              <li>Microsoft Excel</li>
+              <li>Microsoft Word</li>
+              <li>Microsoft PowerPoint</li>
+              <li>Canva</li>
+              <li>E-Learning Platform &amp; Database Management</li>
+            </ul>
+          </article>
+
+          <article class="reveal skill-card" style="--delay:240ms">
+            <header class="skill-head">
+              <span class="skill-icon"><svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.33-8.5A5.5 5.5 0 0 1 12 6.5a5.5 5.5 0 0 1 9.33 6C19 16.65 12 21 12 21z"/></svg></span>
+              <h3>Soft Skills</h3>
+            </header>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="pill">Teamwork</span>
+              <span class="pill">Communication</span>
+              <span class="pill">Collaboration</span>
+              <span class="pill">Adaptability</span>
+              <span class="pill">Responsibility</span>
+              <span class="pill">Project Management</span>
+              <span class="pill">Design Thinking</span>
+              <span class="pill">Attention to Detail</span>
+              <span class="pill">Events</span>
+              <span class="pill">Team Management</span>
+              <span class="pill">Problem Solving</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="reveal mt-8 text-center text-[13px] text-slate-400">
+          All skills and tools above are taken directly from my CV. No proficiency scores are claimed.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════ EXPERIENCE ══════════════════ -->
+    <section id="experience" class="section-anchor mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <span class="eyebrow">Experience</span>
+        <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2.15rem]">Experience &amp; Leadership</h2>
+        <p class="mt-4 text-[15px] leading-relaxed text-slate-600">
+          My professional experience and organizational involvement.
+        </p>
+      </div>
+
+      <div class="timeline mt-14">
+        <!-- 1 — CeLOE (right side) -->
+        <article class="reveal tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-meta">
+            <span class="tl-tag">Professional</span>
+            <h3 class="tl-role">Staff Pengelolaan dan Pemanfaatan Content Digital</h3>
+            <p class="tl-org">Center of eLearning and Open Education (CeLOE) — Telkom University</p>
+            <p class="tl-date">Jul 2023 – Sep 2023 · Bandung, Indonesia</p>
+          </div>
+          <div class="tl-card">
+            <p class="tl-desc">CeLOE provides an integrated blended-learning ecosystem based on technology, science, and art.</p>
+            <ul class="tl-list">
+              <li><strong>Content Production</strong> — produced and curated visual learning materials (PowerPoint slides &amp; instructional videos) meeting company quality standards on a daily basis.</li>
+              <li><strong>Platform Management</strong> — managed and uploaded content on schedule to the e-learning platform to keep the user experience running optimally.</li>
+              <li><strong>Event &amp; Booth Management</strong> — actively involved in field coordination, staffing the booth, and building persuasive communication with visitors and partners.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2 — PERKARA -->
+        <article class="reveal tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-meta">
+            <span class="tl-tag">Organization</span>
+            <h3 class="tl-role">Wakil Ketua Acara <span class="tl-role-en">(Vice Head of Event)</span></h3>
+            <p class="tl-org">PERKARA</p>
+            <p class="tl-date">Aug 2022 – Jun 2024 · Karawang &amp; Bandung, Indonesia</p>
+          </div>
+          <div class="tl-card">
+            <p class="tl-desc">A community for Telkom University students from Karawang, built to strengthen relationships, togetherness, and solidarity among members.</p>
+            <ul class="tl-list">
+              <li>Led event concept design and execution from ideation and budgeting through to final evaluation.</li>
+              <li>Coordinated the team in preparing creative promotional materials aligned with each event theme.</li>
+              <li>Supervised and took direct responsibility for new member selection and retention.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 3 — Peace -->
+        <article class="reveal tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-meta">
+            <span class="tl-tag">Organization</span>
+            <h3 class="tl-role">Sekretaris <span class="tl-role-en">(Secretary)</span></h3>
+            <p class="tl-org">Peace</p>
+            <p class="tl-date">Dec 2022 – Feb 2023 · Karawang, Indonesia</p>
+          </div>
+          <div class="tl-card">
+            <p class="tl-desc">Telkom University outreach and promotion through roadshows, edufairs, and seminars/webinars.</p>
+            <ul class="tl-list">
+              <li>Managed official organizational administration, including invitation letters, bureaucratic permits, and activity reports.</li>
+              <li>Acted as minute-taker for regular meetings to keep committee coordination aligned.</li>
+              <li>Compiled the post-event accountability report (LPJ) systematically and accountably.</li>
+              <li>Managed the participant registration database to support smooth on-site event operations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 4 — CEF -->
+        <article class="reveal tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="tl-meta">
+            <span class="tl-tag">Organization</span>
+            <h3 class="tl-role">Produksi, Media dan Pemasaran <span class="tl-role-en">(Production, Media &amp; Marketing)</span></h3>
+            <p class="tl-org">Creative Entrepreneurship Festival — Telkom University</p>
+            <p class="tl-date">Mar 2023 – May 2023 · Bandung, Indonesia</p>
+          </div>
+          <div class="tl-card">
+            <p class="tl-desc">A program giving students hands-on experience developing innovative business ideas — from planning and production through to marketing.</p>
+            <ul class="tl-list">
+              <li>Designed digital marketing strategy and managed creative social media content to increase brand awareness.</li>
+              <li>Planned requirements, selected quality raw materials, and processed products under strict hygiene standards.</li>
+              <li>Performed periodic quality control on production output to ensure quantity matched demand targets.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════════════ EDUCATION ══════════════════ -->
+    <section id="education" class="section-anchor border-y border-slate-200 bg-white">
+      <div class="mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="eyebrow">Education</span>
+          <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2.15rem]">Academic Background</h2>
+        </div>
+
+        <div class="reveal mt-12 grid gap-5 lg:grid-cols-[1.1fr_.9fr]">
+          <div class="rounded-2xl border border-slate-200 bg-mist/60 p-7 sm:p-9">
+            <div class="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-bold">Universitas Telkom</h3>
+                <p class="mt-1 text-[14px] text-slate-500">Bandung, Indonesia</p>
+              </div>
+              <span class="date-chip">Sep 2020 – Dec 2024</span>
+            </div>
+
+            <p class="mt-5 text-[15px] font-semibold text-navy-600">
+              Bachelor of Management
+            </p>
+            <p class="text-[14px] text-slate-600">Business Management in Telecommunications &amp; Informatics</p>
+
+            <div class="mt-5 inline-flex items-baseline gap-2 rounded-lg border border-accent/20 bg-accent-soft px-4 py-2">
+              <span class="text-[13px] font-medium text-navy-600">GPA</span>
+              <span class="text-lg font-extrabold text-accent">3.48</span>
+              <span class="text-[13px] text-slate-500">/ 4.00</span>
+            </div>
+
+            <div class="mt-7 rounded-xl border border-slate-200 bg-white p-5">
+              <p class="text-[12px] font-semibold uppercase tracking-wider text-slate-400">Final Project</p>
+              <p class="mt-2 text-[14.5px] font-medium leading-relaxed text-navy">
+                “Pengaruh Perilaku Keuangan dan Sikap Keuangan Terhadap Keputusan Investasi dengan Literasi Keuangan
+                sebagai Variabel Moderasi”
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 bg-mist/60 p-7 sm:p-9">
+            <h3 class="text-lg font-bold">Relevant Coursework</h3>
+            <p class="mt-1 text-[14px] text-slate-500">Courses completed during the programme.</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="pill">Manajemen Keuangan</span>
+              <span class="pill">Manajemen Data</span>
+              <span class="pill">Manajemen Operasi</span>
+              <span class="pill">Big Data dan Data Analitik</span>
+              <span class="pill">Perilaku Konsumen</span>
+              <span class="pill">Regulasi Bisnis</span>
+              <span class="pill">Manajemen Projek</span>
+              <span class="pill">Perilaku Organisasi</span>
+              <span class="pill">Design Thinking</span>
+              <span class="pill">Manajemen Sumber Daya Manusia Stratejik</span>
+              <span class="pill">Etika Bisnis dan Tata Kelola Perusahaan</span>
+              <span class="pill">Manajemen Rantai Pasok</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ PROJECTS ══════════════════ -->
+    <section id="projects" class="section-anchor mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2.15rem]">Featured Projects</h2>
+        <p class="mt-4 text-[15px] leading-relaxed text-slate-600">
+          A selection of my academic and professional work. Select a card to see the full detail.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <!-- Project 1 -->
+        <article class="reveal project-card" tabindex="0" role="button" data-project="finance" aria-haspopup="dialog"
+                 aria-label="Open details for Financial Behavior and Investment Decision">
+          <div class="project-visual project-visual--finance project-visual--photos project-visual--one">
+            <img src="assets/img/skripsi.jpeg" alt="Sarah holding her final project at the School of Economics and Business, Telkom University"
+                 class="project-photo project-photo--thesis" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Academic Project</span>
+            <h3 class="project-title">Financial Behavior &amp; Investment Decision</h3>
+            <p class="project-sum">Undergraduate final project examining how financial behavior and financial attitude shape investment decisions, with financial literacy as a moderating variable.</p>
+            <span class="project-cta">View details
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="reveal project-card" tabindex="0" role="button" data-project="cef" aria-haspopup="dialog"
+                 aria-label="Open details for Creative Entrepreneurship Festival" style="--delay:80ms">
+          <div class="project-visual project-visual--cef project-visual--photos">
+            <img src="assets/img/iceeu-2.jpeg" alt="Product photos of the Ice See U ice cream cups"
+                 class="project-photo" loading="lazy" decoding="async" />
+            <img src="assets/img/iceeu.jpeg" alt="Participants and booths at the Creative Entrepreneurship Festival"
+                 class="project-photo project-photo--crowd" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Event / Marketing Project</span>
+            <h3 class="project-title">Creative Entrepreneurship Festival</h3>
+            <p class="project-sum">Production, media, and marketing role in a student festival for developing innovative business ideas — from planning and production through to marketing.</p>
+            <span class="project-cta">View details
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="reveal project-card" tabindex="0" role="button" data-project="celoe" aria-haspopup="dialog"
+                 aria-label="Open details for Digital Learning Content Management" style="--delay:160ms">
+          <div class="project-visual project-visual--celoe project-visual--photos">
+            <img src="assets/img/celoe-2.jpeg" alt="Team photo at CeLOE Digital Space, Telkom University"
+                 class="project-photo" loading="lazy" decoding="async" />
+            <img src="assets/img/celoe.jpeg" alt="CeLOE online session on optimising CDS &amp; LMS service usage"
+                 class="project-photo project-photo--tall" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Professional Experience</span>
+            <h3 class="project-title">Digital Learning Content Management</h3>
+            <p class="project-sum">Producing, curating, and scheduling digital learning content on the CeLOE Telkom University e-learning platform to keep the user experience optimal.</p>
+            <span class="project-cta">View details
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </article>
+      </div>
+
+      <p class="reveal mt-8 text-center text-[13px] text-slate-400">
+        Project documentation is available on request — no public project links are listed in my CV.
+      </p>
+    </section>
+
+    <!-- ══════════════════ CERTIFICATIONS ══════════════════ -->
+    <section id="certifications" class="section-anchor border-y border-slate-200 bg-white">
+      <div class="mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="eyebrow">Credentials</span>
+          <h2 class="mt-3 text-[1.75rem] font-extrabold tracking-tight sm:text-[2.15rem]">Certifications</h2>
+          <p class="mt-4 text-[15px] leading-relaxed text-slate-600">
+            Professional certifications completed alongside my degree.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="reveal cert-card">
+            <div class="cert-top">
+              <span class="cert-icon"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7v6c0 5 3.8 8.4 9 9 5.2-.6 9-4 9-9V7z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <span class="cert-year">2023</span>
+            </div>
+            <h3 class="cert-title">Manajemen Risiko</h3>
+            <p class="cert-issuer">BNSP — Badan Nasional Sertifikasi Profesi</p>
+            <span class="cert-badge">Risk Management</span>
+
+            <figure class="cert-photo">
+              <img src="assets/img/sertifikasi.jpeg" alt="Online BNSP risk management certification session in progress"
+                   loading="lazy" decoding="async" />
+            </figure>
+          </article>
+
+          <article class="reveal cert-card" style="--delay:80ms">
+            <div class="cert-top">
+              <span class="cert-icon"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg></span>
+              <span class="cert-year">2025</span>
+            </div>
+            <h3 class="cert-title">Digital Marketing</h3>
+            <p class="cert-issuer">RevoU</p>
+            <span class="cert-badge">Marketing</span>
+
+            <figure class="cert-photo">
+              <img src="assets/img/DigitalMarketing.jpeg" alt="RevoU certificate of completion for Intro to Digital Marketing"
+                   loading="lazy" decoding="async" />
+            </figure>
+          </article>
+
+          <article class="reveal cert-card" style="--delay:160ms">
+            <div class="cert-top">
+              <span class="cert-icon"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 3 5-6"/></svg></span>
+              <span class="cert-year">2025</span>
+            </div>
+            <h3 class="cert-title">Data Analytics</h3>
+            <p class="cert-issuer">RevoU</p>
+            <span class="cert-badge">Data</span>
+
+            <figure class="cert-photo">
+              <img src="assets/img/DataAnalytics.jpeg" alt="RevoU certificate of completion for Intro to Data Analytics"
+                   loading="lazy" decoding="async" />
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section id="contact" class="section-anchor mx-auto max-w-[1240px] px-5 py-16 lg:px-8 lg:py-24">
+      <div class="reveal cta-panel">
+        <span class="cta-eyebrow">Get in touch</span>
+        <h2 class="mt-4 max-w-2xl text-[1.8rem] font-extrabold leading-tight tracking-tight sm:text-[2.4rem]">
+          Ready to Create Business Impact
+        </h2>
+        <p class="mt-5 max-w-xl text-[15px] leading-relaxed text-slate-300">
+          Open to opportunities in business development, business analysis, and digital marketing.
+          Feel free to reach out through any of the channels below.
+        </p>
+
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="mailto:sarahkhai48@gmail.com" class="cta-btn cta-btn--solid">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Email Me
+          </a>
+          <a href="https://linkedin.com/in/sarahkhairunnisaadikusuma/" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--ghost">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.35c0-1.28-.02-2.92-1.78-2.92-1.79 0-2.06 1.4-2.06 2.83V21H9z"/></svg>
+            LinkedIn
+          </a>
+          <a href="tel:+6281316231212" class="cta-btn cta-btn--ghost">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+          </a>
+        </div>
+
+        <dl class="mt-11 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
+          <div><dt class="cta-label">Email</dt><dd class="cta-value"><a href="mailto:sarahkhai48@gmail.com">sarahkhai48@gmail.com</a></dd></div>
+          <div><dt class="cta-label">Phone</dt><dd class="cta-value"><a href="tel:+6281316231212">081316231212</a></dd></div>
+          <div><dt class="cta-label">Location</dt><dd class="cta-value">Rengasdengklok, Karawang</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-[1240px] flex-col items-center justify-between gap-4 px-5 py-8 text-[13.5px] text-slate-500 sm:flex-row lg:px-8">
+      <p>© <span id="year">2026</span> Sarah Khairunnisa Adi Kusuma. All rights reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="mailto:sarahkhai48@gmail.com" class="hover:text-accent">Email</a>
+        <a href="https://linkedin.com/in/sarahkhairunnisaadikusuma/" target="_blank" rel="noopener noreferrer" class="hover:text-accent">LinkedIn</a>
+        <a href="assets/SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" download="SARAH-KHAIRUNNISA-ADI-KUSUMA-CV.pdf" class="hover:text-accent">Download CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════ PROJECT MODAL ══════════════════ -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close dialog" data-modal-close>
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <span id="modalCategory" class="project-cat"></span>
+      <h3 id="modalTitle" class="mt-3 text-[1.5rem] font-extrabold leading-snug tracking-tight sm:text-[1.75rem]"></h3>
+      <p id="modalContext" class="mt-2 text-[13.5px] font-medium text-slate-500"></p>
+
+      <div class="modal-section">
+        <h4 class="modal-h">Description</h4>
+        <p id="modalDescription" class="modal-text"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-h">Contribution</h4>
+        <ul id="modalContribution" class="modal-list"></ul>
+      </div>
+
+      <div class="modal-section">
+        <h4 class="modal-h">Relevant Skills</h4>
+        <div id="modalSkills" class="mt-3 flex flex-wrap gap-2"></div>
+      </div>
+
+      <p class="mt-7 border-t border-slate-200 pt-5 text-[12.5px] text-slate-400">
+        No public project URL is available — documentation can be shared on request.
+      </p>
+    </div>
+  </div>
+
+  <a href="#hero" id="backToTop" class="back-to-top" aria-label="Back to top" data-nav>
+    <svg class="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
